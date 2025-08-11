@@ -1,0 +1,109 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: #0f1221;
+  color: #f1f3f9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: #171a2f;
+  border-bottom: 1px solid #2a2f4a;
+}
+header h1 { margin: 0; font-size: 20px; }
+.actions button {
+  margin-right: 8px;
+  padding: 8px 12px;
+  background: #334155;
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.actions button:hover { background: #475569; }
+#status { margin-left: 8px; color: #94a3b8; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: #171a2f;
+  border: 1px solid #2a2f4a;
+  border-radius: 10px;
+  padding: 12px;
+}
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+.meta { font-size: 13px; color: #a5b4fc; }
+.price { font-weight: 700; color: #fbbf24; }
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-right: 6px;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+}
+.badge.green { border-color: #22c55e; color: #22c55e; }
+.badge.red { border-color: #ef4444; color: #ef4444; }
+.badge.blue { border-color: #60a5fa; color: #60a5fa; }
+
+.segment {
+  background: #171a2f;
+  border: 1px solid #2a2f4a;
+  border-radius: 10px;
+  padding: 12px;
+}
+.segment textarea {
+  width: 100%;
+  background: #0b1021;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 8px;
+  outline: none;
+}
+.segment-actions {
+  margin-top: 8px;
+}
+.segment-actions button {
+  margin-right: 8px;
+  padding: 8px 12px;
+  background: #334155;
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.segment .result {
+  margin-top: 12px;
+  background: #0b1021;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 8px;
+  color: #93c5fd;
+  max-height: 400px;
+  overflow: auto;
+}
+.examples { margin-top: 8px; color: #94a3b8; font-size: 13px; }
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+}

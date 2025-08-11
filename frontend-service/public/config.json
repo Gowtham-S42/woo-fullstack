@@ -1,0 +1,4 @@
+{
+  "PRODUCT_API_BASE": "http://localhost:4001",
+  "SEGMENT_API_BASE": "http://localhost:4002"
+}

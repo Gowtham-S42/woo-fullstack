@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Woo Products & Segments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Products</h1>
+    <div class="actions">
+      <button id="refresh">Refresh Products</button>
+      <button id="ingest">Ingest Now</button>
+      <span id="status"></span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="products">
+      <div id="products" class="grid"></div>
+    </section>
+
+    <section class="segment">
+      <h2>Define Filter Conditions</h2>
+      <p>Enter filter rules (one per line):</p>
+      <textarea id="rules" rows="8" placeholder="price > 5000&#10;category = Smartphones&#10;stock_status = instock"></textarea>
+      <div class="segment-actions">
+        <button id="evaluate">Evaluate Filter</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div class="examples">
+        <strong>Examples:</strong> price > 5000, category = Smartphones, stock_status = instock, on_sale = true, tags != Samsung
+      </div>
+      <pre id="result" class="result"></pre>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
