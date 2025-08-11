@@ -67,4 +67,4 @@ Tech: Node.js, MySQL, HTML/CSS/JS. Microservices:
 - 1.Create DB and table
 Open a terminal in your project root (woo-fullstack).
 Run the schema script:
-C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p < .\sql\schema.sql (This is only for windows)
+C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" -u root -p < .\sql\schema.sql (This is only for windows)"# woo-fullstack" 
